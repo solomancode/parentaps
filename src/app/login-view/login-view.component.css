@@ -1,0 +1,11 @@
+.hero-wrapper {
+    height: 100%;
+    background-color: rgb(34, 26, 30);
+}
+
+.hero-wrapper img {
+    width: 50%;
+    display: block;
+    position: relative;
+    top: calc(50% - 100px);
+} 

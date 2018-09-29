@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row h-100 justify-content-center align-items-center">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let user of usersData">
+        <img class="img-thumbnail user-thumb" src="{{user.avatar}}" alt="{{user.first_name}}">
+        <span>{{user.first_name}}</span>
+        <span>{{user.last_name}}</span>
+      </li>
+    </ul>
+  </div>
+</div>

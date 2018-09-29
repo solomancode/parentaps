@@ -1,0 +1,41 @@
+<div class="container-fluid h-100">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="offset-1 col-4">
+      <form action="post" (submit)="login($event)">
+        <div *ngIf="!!error" class="alert alert-danger">
+          <strong>Error!</strong> {{error}}.
+        </div>
+        <div class="row form-group">
+          <div class="col">
+            <label for="email">Email</label>
+            <input [(ngModel)]="user.email" name="email" id="email" autofocus type="email" class="form-control" placeholder="enter your email">
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col">
+            <label for="password">Password</label>
+            <input [(ngModel)]="user.password" name="password" id="password" type="password" class="form-control" placeholder="enter password">
+          </div>
+        </div>
+        <hr>
+        <div class="row form-group">
+            <div class="col">
+              <button [disabled]="processing" type="submit" class="btn btn-primary btn-lg btn-block">login</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row form-group">
+            <div class="col">
+              <p class="text-center">Don't have an account.?</p>
+              <button type="button" class="btn btn-outline-dark btn-block">Sign up</button>
+            </div>
+        </div>
+      </form>
+    </div>
+    <div class="offset-1 col-6 h-100 align-items-center">
+      <div class="hero-wrapper">
+        <img class="mx-auto" src="assets/ParentApps-Logo-White.png" alt="ParentApps Logo White">
+      </div>
+    </div>
+  </div>
+</div>
